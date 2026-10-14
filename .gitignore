@@ -1,4 +1,4 @@
-/votaciones_csvs
-/ejemplo_salida
+scraper/votaciones_csvs
+scraper/ejemplo_salida
 /.Rhistory
 __pycache__/
