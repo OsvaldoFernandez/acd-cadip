@@ -21,9 +21,18 @@ OK     142 sesiones, todas con >= 231 votos (mediana 257)
        gráfico guardado en /tmp/validar_ok/votos_por_sesion.png
 
 #### Cómo ejecutar el scraper?
+- Datos de entrada: Para correr el script formatear_votaciones.py, primero debemos contar con las sesiones ya bajadas previamente (para no bajas todas desde cero). 
+- Ubicar `sesiones_dt.csv.gz` y `info_sesiones_dt.csv` dentro de la carpeta `scraper/votaciones_csvs`
+- Correr `scraper_votaciones.py` para bajar los csvs, ubicarlos en `scraper/votaciones_csvs`
 
+```
 python3 scraper_votaciones.py    # baja los csvs
 python3 formatear_votaciones.py votaciones_csvs ./ # formatea los csvs
 python3 validar_tablas.py votaciones_csvs
+```
+
+- Datos de salida: Dentro de la carpeta `scraper/votaciones_csvs` se generarán los nuevos archivos `sesiones_dt.csv.gz` y `info_sesiones_dt.csv`. Adicionalmente se generará el png con los gráficos de verificación y un backup de los datos previos.
+
+
 
 
