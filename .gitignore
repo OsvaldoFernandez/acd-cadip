@@ -1,6 +1,6 @@
 scraper/votaciones_csvs
 scraper/ejemplo_salida
 puntos_ideales/2_datos/*
-puntos_ideales/3_scripts/idps_py/*
+puntos_ideales/3_scripts/.DS_Store
 /.Rhistory
 __pycache__/
